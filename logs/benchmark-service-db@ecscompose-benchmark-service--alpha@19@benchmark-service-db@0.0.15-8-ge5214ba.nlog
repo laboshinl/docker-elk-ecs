@@ -1,0 +1,10 @@
+{"log":"2016-05-24 15:00:44 1 [Note] InnoDB: Waiting for purge to start\n","stream":"stderr","time":"2016-05-24T15:00:44.31147499Z"}
+{"log":"2016-05-24 15:00:44 1 [Note] InnoDB: 5.6.30 started; log sequence number 1905511\n","stream":"stderr","time":"2016-05-24T15:00:44.372668325Z"}
+{"log":"2016-05-24 15:00:44 1 [Note] Server hostname (bind-address): '*'; port: 3306\n","stream":"stderr","time":"2016-05-24T15:00:44.373202349Z"}
+{"log":"2016-05-24 15:00:44 1 [Note] IPv6 is available.\n","stream":"stderr","time":"2016-05-24T15:00:44.373258879Z"}
+{"log":"2016-05-24 15:00:44 1 [Note]   - '::' resolves to '::';\n","stream":"stderr","time":"2016-05-24T15:00:44.37333886Z"}
+{"log":"2016-05-24 15:00:44 1 [Note] Server socket created on IP: '::'.\n","stream":"stderr","time":"2016-05-24T15:00:44.373644437Z"}
+{"log":"2016-05-24 15:00:44 1 [Warning] 'proxies_priv' entry '@ root@48fb9f02992e' ignored in --skip-name-resolve mode.\n","stream":"stderr","time":"2016-05-24T15:00:44.37482513Z"}
+{"log":"2016-05-24 15:00:44 1 [Note] Event Scheduler: Loaded 0 events\n","stream":"stderr","time":"2016-05-24T15:00:44.395063038Z"}
+{"log":"2016-05-24 15:00:44 1 [Note] mysqld: ready for connections.\n","stream":"stdout","time":"2016-05-24T13:18:44.397420223Z"}
+{"log":"Version: '5.6.30'  socket: '/var/run/mysqld/mysqld.sock'  port: 3306  MySQL Community Server (GPL)\n","stream":"stderr","time":"2016-05-24T13:18:44.397438629Z"}

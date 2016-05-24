@@ -1,0 +1,7 @@
+[2016-05-24 14:44:45,327: INFO/MainProcess] Connected to redis://benchmark-service-redis:6379//
+[2016-05-24 14:44:45,344: INFO/MainProcess] mingle: searching for neighbors
+[2016-05-24 14:44:46,357: INFO/MainProcess] mingle: all alone
+[2016-05-24 14:44:46,366: WARNING/MainProcess] celery@9509eb0b531b ready.
+[2016-05-24 14:44:46,366: WARNING/MainProcess] ONE
+[2016-05-24 14:44:46,366: WARNING/MainProcess] TWO
+[2016-05-24 14:44:46,366: WARNING/MainProcess] THREE
