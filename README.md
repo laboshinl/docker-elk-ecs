@@ -7,17 +7,18 @@ Shamelessly forked from  deviantony/docker-elk
 Run the latest version of the ELK (Elasticseach, Logstash, Kibana) stack with Docker and Docker-compose to grok ECS log files
 
 
-# A few Additions
+## Additions to support ECS docker logs
+1. **name_the_container_logs.sh** -- a shell script that you can run as a service on your ECS instances. It creates a symbolic link to each container's log file and embeds the ecs-container-name, ecs-task-family and ecs-task-revision, ecs-image-name and ecs-image-version (aka tag)
+2. **grok patterns** for docker logs
+
+## Additions to Make Testing Easier
 1. **a /logs volume** mounted from the current working directory -- just drop files in, and they'll be stashed into Kibana
 2. **-r Option to logstash** so you can change the logstash.conf file without having to restart your containers
-3. **name_the_container_logs.sh** -- a shell script that you can run as a service on your ECS instances. It creates a symbolic link each container's log file and embeds the 
-   ecs-container-name, ecs-task-family and ecs-task-revision, ecs-image-name and ecs-image-version (aka tag)
-4. **grok patterns** for docker logs
 
 
 # Results
 
-##Kibana logging will have extra fields:
+##Kibana logging will have extra ECS fields:
 
 * docker_log_message     
 * docker_log_stream      
@@ -28,7 +29,11 @@ Run the latest version of the ELK (Elasticseach, Logstash, Kibana) stack with Do
 * ecs_task_definition_family
 * ecs_task_definition_version 
 
-##Testing grok rules is easier -- just drop your log files into ./logs and logstash will slurp them up.
+##Testing grok rules is easier
+
+1. just drop your log files into ./logs and logstash will slurp them up.
+2. Edit the logstash.conf file, and logstash will reload it
+3. `make run` starts it up, feeds logs/initial-input.log into logstash, and opens Kibana in a browser
 
 
 # Configuring Your Logstash indexer
