@@ -62,8 +62,7 @@ name_the_container() {
 
 name_the_containers() {
     cd $CONTAINER_DIR
-    inotifywait --event create --monitor . | 
-        while read watched_dir event container_id
+        for container_id in `ls .`
         do
             # The docker engine "saves" our symlink files when it destroys container directories, by moving them up 
             # to the parent directory (here) so we need to periodically remove these artifacts
