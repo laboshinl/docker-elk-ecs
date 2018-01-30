@@ -12,7 +12,7 @@ name_the_container() {
     container_id=$1
 
     (
-        set -ex
+        set -e
         [ -d "$CONTAINER_DIR/$container_id" ] || return
         
         cd "$CONTAINER_DIR/$container_id" 
